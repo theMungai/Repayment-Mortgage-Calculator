@@ -98,7 +98,8 @@ body {
 }
 
 .mortgage-amount input{
-    padding: 12px 60px;
+    padding: 12px 0px;
+    padding-left: 90px;
     width: 100%;
     border: 1px solid var(--slate-700);
     border-radius: 4px;
@@ -395,11 +396,6 @@ input[type="radio"]:checked + label::before {
     .mortgage-header h2{
         font-size: 1.4rem;
         padding-bottom: 10px;
-    }
-
-
-    .mortgage-amount input {
-        padding-left:90px;
     }
 
     .mortgage-terms{
