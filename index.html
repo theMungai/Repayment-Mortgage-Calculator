@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <form class="user-form">
+            <div class="mortgage-header">
+                <h2>Mortgage Calculator</h2>
+                <button class = "clear-all">Clear All</button>
+            </div>
+    
+            <div class="mortgage-amount">
+                <label for="amount"> Mortgage Amount</label>
+
+                <div class="input-wrapper">
+                    <input type="number" id="amount">
+                    <span class="amount-span">£</span>
+                </div>
+                
+                <div class="error-message" id="mortgage-amount-error"></div>
+            </div>
+    
+            <div class="mortgage-terms">
+                <div class="mortgage-term">
+                    <label for="term">Mortgage Term</label>
+                    <div class="input-wrapper">
+                        <input type="number" name="term" id="term" > 
+                        <span class="term-span">years</span>
+                    </div>
+                    <div class="error-message" id="mortgage-term-error"></div>
+                </div>
+                
+                <div class="interest-rate">
+                    <label for="interest-rate">Interest Rate</label>
+                    <div class="input-wrapper">
+                        <input type="number" name="interest-rate" id="interest-rate"> 
+                        <span class="rate-span">%</span>
+                    </div>
+                    
+                    <div class="error-message" id="interest-rate-error"></div>
+                </div>
+                
+            </div>
+    
+            <div class="mortgage-type">
+                <label for="">Mortgage Type</label>
+    
+                <div class="repayment">
+                    <input type="radio" name="mortgage-type" class="repayment-radio"> <label for="" class="repayment-input">Repayment</label>
+                </div>
+    
+                <div class="interest-only">
+                    <input type="radio" name="mortgage-type" class="interest-radio"> <label for="" class="interest-only-input">Interest Only</label>
+                </div>    
+            </div>
+            <div class="error-message" id="mortgage-type-error"></div>
+
+            <button type="button" class="calculate-button">
+                <img src="/images/icon-calculator.svg" alt="">
+                Calculate Repayments
+            </button>
+        </form>
+
+        <div class="user-results">
+            <div class="empty-results">
+                <img src="images/illustration-empty.svg" alt="">
+                <h3>Results shown here</h3>
+                <p>Complete the form and click “calculate repayments” to see what 
+                    your monthly repayments would be.</p>
+            </div>
+
+            <div class="results-calculation">
+                <div class="your-results">
+                    <h3>Your results</h3>
+                    <p>Your results are shown below based on the information you provided. 
+                        To adjust the results, edit the form and click “calculate repayments” again.
+                    </p>
+                </div>
+        
+                <div class="calculation">
+                    <div class="monthly-repayments">
+                        <p>Your monthly repayments</p>
+                        <h1 class = "js-monthly-payment"></h1>
+                    </div>
+        
+                    <hr class="horizontal">
+                    <div class="total-repayments">
+                        <p>Total you'll repay over the term</p>
+                        <h3 class = "js-total-payment"></h3>
+        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <footer>
+    <div class="attribution">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
